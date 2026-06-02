@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProDentist | Clinical Excellence &amp; Luxury Care</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#8e8d8c",
+                        "on-tertiary-fixed-variant": "#554422",
+                        "surface-container-high": "#eae8e3",
+                        "on-secondary-container": "#745c00",
+                        "surface-container-low": "#f5f3ee",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-tint": "#5f5e5e",
+                        "background": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "surface-dim": "#dbdad5",
+                        "on-surface-variant": "#444748",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-tertiary-container": "#a08b62",
+                        "surface-variant": "#e4e2dd",
+                        "surface-container": "#f0eee9",
+                        "secondary-fixed": "#ffe088",
+                        "on-surface": "#1b1c19",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#e9c349",
+                        "primary": "#111111",
+                        "tertiary": "#191000",
+                        "surface": "#fbf9f4",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "tertiary-fixed": "#f9dfb1",
+                        "primary-container": "#262626",
+                        "outline": "#747878",
+                        "tertiary-container": "#322405",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#e4e2e1",
+                        "on-primary-fixed-variant": "#474746",
+                        "inverse-surface": "#30312e",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#1b1c1c",
+                        "inverse-on-surface": "#f2f1ec",
+                        "secondary-container": "#fed65b",
+                        "inverse-primary": "#c8c6c5",
+                        "on-secondary-fixed": "#241a00",
+                        "outline-variant": "#c4c7c7",
+                        "tertiary-fixed-dim": "#dcc497",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-bright": "#fbf9f4",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#735c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px",
+                        "gutter": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(251,249,244,0) 0%, rgba(251,249,244,1) 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-500 bg-background/80 backdrop-blur-md border-b border-outline-variant/30" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-screen-2xl mx-auto">
+<div class="text-body-lg font-headline-md font-bold tracking-tight text-primary">ProDentist</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-primary font-semibold border-b border-primary pb-1 font-label-sm text-label-sm uppercase tracking-widest cursor-pointer transition-all duration-200 active:scale-95" href="#home">Home</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="#services">Services</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="#about">About</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="#gallery">Smile Gallery</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="#testimonials">Testimonials</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block px-8 py-3 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary/90 transition-all active:scale-95">Book Appointment</button>
+<button class="md:hidden flex flex-col gap-1.5 p-2" id="mobile-menu-toggle">
+<div class="w-6 h-0.5 bg-primary"></div>
+<div class="w-6 h-0.5 bg-primary"></div>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu Overly -->
+<div class="fixed inset-0 bg-background z-[60] flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-300" id="mobile-overlay">
+<button class="absolute top-6 right-6" id="close-mobile-menu">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+<a class="text-headline-md font-headline-md" href="#home">Home</a>
+<a class="text-headline-md font-headline-md" href="#services">Services</a>
+<a class="text-headline-md font-headline-md" href="#about">About</a>
+<a class="text-headline-md font-headline-md" href="#gallery">Smile Gallery</a>
+<a class="text-headline-md font-headline-md" href="#testimonials">Testimonials</a>
+<button class="mt-8 px-10 py-4 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest">Book Appointment</button>
+</div>
+<!-- Cinematic Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden" id="home">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Dental Clinic Interior" class="w-full h-full object-cover" data-alt="A luxurious, minimalist dental clinic reception area featuring warm ivory walls, soft ambient lighting, and sophisticated beige furniture. The space feels like a high-end boutique hotel rather than a medical office. Soft golden sunlight streams through large windows, creating a peaceful and clinical yet inviting atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfnl9mF8XSKD-syp6HyjQfbMjVh2Bg0VgoYc1nxxKSCNllK8Ej2lcQVVCQVmo9E71gJwxwiDwYlIJ45w86Cdp_eFxriOM8anyDoTiHKhiWIH5j5Tn8xFConj83hgXR_kYqtLhvTjVdc1xIbzKgpC_gVo-CdA2bR0NeK2rffSPLOdZ67DF-gB7ROIEMEijgGZblmc1aI4nO4S-5WTvhI3jL7fF7JfdW2oky8nKKQ9JPfT9WRVGFuiJ3FOwkwXHrDm_FnBjJMeyYwKg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 lg:col-span-6 reveal active">
+<h1 class="text-headline-lg-mobile md:text-display-lg font-display-lg text-primary mb-8 leading-tight">Crafting Confident Smiles With <span class="italic">Luxury Care</span></h1>
+<p class="text-body-lg text-on-surface-variant mb-12 max-w-xl">Experience dentistry as an art form. Our boutique clinic blends world-class clinical precision with a refined environment designed for your comfort and serenity.</p>
+<div class="flex flex-wrap gap-4">
+<button class="px-10 py-4 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary/90 transition-all active:scale-95">Book Consultation</button>
+<button class="px-10 py-4 border border-secondary text-secondary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary/5 transition-all active:scale-95 flex items-center gap-2">
+                        WhatsApp <span class="material-symbols-outlined text-sm">chat_bubble</span>
+</button>
+</div>
+<div class="mt-20 flex gap-12 items-center">
+<div class="flex flex-col">
+<span class="text-headline-md font-headline-md text-primary">4.9/5</span>
+<span class="text-label-sm font-label-sm uppercase text-on-surface-variant">Patient Rating</span>
+</div>
+<div class="w-px h-12 bg-outline-variant/30"></div>
+<div class="flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-2 border-background object-cover" data-alt="Close up portrait of a smiling woman showing natural, healthy teeth, photographed in soft studio lighting with a warm ivory background. High-fashion photography style, emphasizing elegance and health." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-x4L2YAQhvcc9ZINbQ6wu-yjvnR_AuDfBDN0wEgENjT7TOAX85JPuG0bnYZFECpYgBpWIfKvlQgVzoVndqIkwbwBQ-7us0Wl-zAVZGKWeOyAizJhwYZ9rbgabVDnY9Og0lLD1OYxxhKwvcwmV7WtHC-knStmevB63bKjvgzpxH2v8xT4ObECKabT3oGX6axAiRxQD3nM9ZLjt1R08em_YCT_Yi3Vd73-v9XfIsaOE35XuPZlcHfZASKjqS7ix-xKkr4vJGck-u4w"/>
+<img class="w-12 h-12 rounded-full border-2 border-background object-cover" data-alt="Portrait of a professional man with a confident, healthy smile, set against a blurred minimalist office background. Clean aesthetic with high contrast and editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi5Y9bpabZaLSl6G_Ezr6NQe7B_-vch41BYK-PtnnHLUARj3-fQS2_vXzj_5VV-mMz3065Q3Uev-QOzoWe7-GM5QldkTFjx6w2N4upxucgOSCqrN-_WRYiUnrt6HQyGTlYMLoylQZ_rzuaWPChmPJ4SS3GuuZuaQHozambXVZa9EUFEMq1rp4eiqAfGkxJEaZ0KjrQonBmpTfsS-ugXwzN6_53etPZd_p4EGz-oNJk8VKtisVQ9fy1oFEKp6UfrrpdbsBaPkHlZbc"/>
+<div class="w-12 h-12 rounded-full border-2 border-background bg-surface-container-high flex items-center justify-center text-label-sm font-bold">+2k</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistics Section -->
+<section class="py-24 bg-surface px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter reveal">
+<div class="flex flex-col items-center text-center p-8 border-r border-outline-variant/20 last:border-0">
+<span class="text-headline-lg font-headline-lg text-primary">15k+</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Happy Patients</span>
+</div>
+<div class="flex flex-col items-center text-center p-8 border-r border-outline-variant/20 last:border-0">
+<span class="text-headline-lg font-headline-lg text-primary">20+</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Years Experience</span>
+</div>
+<div class="flex flex-col items-center text-center p-8 border-r border-outline-variant/20 last:border-0">
+<span class="text-headline-lg font-headline-lg text-primary">0%</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Pain Anxiety</span>
+</div>
+<div class="flex flex-col items-center text-center p-8 border-r border-outline-variant/20 last:border-0">
+<span class="text-headline-lg font-headline-lg text-primary">12+</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Specialists</span>
+</div>
+</div>
+</section>
+<!-- Featured Services Grid -->
+<section class="py-32 bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="services">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="max-w-xl reveal">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-6">Expertise in <span class="italic">Every Detail</span></h2>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">From preventative care to complex restorative procedures, our treatments are curated to provide lasting results with uncompromising aesthetics.</p>
+</div>
+<a class="text-label-sm font-label-sm uppercase tracking-widest border-b border-secondary text-secondary pb-1 reveal" href="#">View All Services</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Featured -->
+<div class="md:col-span-8 group overflow-hidden bg-background reveal">
+<div class="relative h-[500px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed close-up of a premium porcelain dental implant, showcasing meticulous craftsmanship and natural texture. The lighting is soft and cinematic, with a high-key ivory background, emphasizing clinical precision and luxury quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqeTFkjEUM96QB8QFA62Wbl7AxSu2EGTMxCM4YLaAoYoA0ksRBglby0fdMFEF8VomTKQ6k3xarPT_PIJ7vDvENzXb58V6-rLkGHG3eWhN390pm2j6qg4plMBLmmEvIhzmc6CNiPcrcQH5i50XQQUad-mzB8McOdf4EoPrfDVJ6mpu3MAT3zfeFvK8CYPa3oFkqZXeNhPYlJKMzDyO10An6AZ19f3enSmYdXUPwjLQCXubgmeldxOQD_b52WFoAfKgnSDPrAAYgkKM"/>
+<div class="absolute bottom-0 left-0 w-full p-10 bg-gradient-to-t from-background via-background/60 to-transparent">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Dental Implants</h3>
+<p class="text-body-md text-on-surface-variant max-w-md">The gold standard for permanent tooth replacement, restoring both function and natural beauty.</p>
+</div>
+</div>
+</div>
+<!-- Small Featured -->
+<div class="md:col-span-4 group overflow-hidden bg-background reveal" style="transition-delay: 100ms;">
+<div class="relative h-[500px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A portrait of a person with perfectly white, natural-looking teeth, capturing a moment of genuine laughter. The style is bright and airy, with soft focus on the background clinic setting, highlighting the result of a professional smile makeover." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi5iCx5K1B0N2a7vY3OvLFOFH95-rdjB41iv4tnh7KD6FKHbAKlRQkxlKfo5ZMM3xm0j5RbvHEskuKzoyn6ZDSXh1iCMGmojS75CMpTch99v357xiFZrn7q4muji6PY2SlzGQzQ7gOSjwsNf2iJbhteX8kS6lmvctc1W2lsTClr9Aus40lraktXt_fSLjoqM5Av4dCBl37iESAMeFdUw6vJiLYH51I0ku2kPVkD3Py85TYKZEWwcPx3Y7Mej2XkoQruIPlzxU-ydM"/>
+<div class="absolute bottom-0 left-0 w-full p-10 bg-gradient-to-t from-background via-background/60 to-transparent">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Smile Makeover</h3>
+<p class="text-body-md text-on-surface-variant">Customized aesthetic transformation combining veneers, whitening, and contouring.</p>
+</div>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="md:col-span-4 group overflow-hidden bg-background reveal">
+<div class="relative h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a set of clear Invisalign aligners sitting on a clean marble surface next to a gold-accented tool. The aesthetic is minimal and high-end, representing modern orthodontic technology in a luxury setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgZ1tAN5kYajOsvk8bquA52KRTyu3yEVyusuzrKgYmcMA2w2Inx2ulkz5regncg_L7yEoLszRAmMQSwum0Vpe8mBteLIzlZrlkMkfMBPVQ-I-bFVF8KsziZw-odhnug7FI08fYID3xQ53nwdRQNq73eu2tMpbC2j5P6GgHHyEoRbOjsnfZ0n-d315VZa3-ViD5iIBm-l59Xq2FaSoH4jJWBIqLexXUsaivf-ltq0XGYztSvYJ5lgcMEGW9GUQJaHMmzehQoveZVWM"/>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-background via-background/60 to-transparent">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Invisalign</h3>
+<p class="text-body-md text-on-surface-variant">Discreetly straighten your smile with the world's most advanced clear aligners.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 group overflow-hidden bg-background reveal" style="transition-delay: 100ms;">
+<div class="relative h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of professional dental whitening equipment in a modern clinic. Soft blue light accents the sterile, sleek design of the technology, set against a warm beige interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqOezFM6_yx2gmdi_LK5XadDuByZNXUqQlXkJwByAeaEARX3BKQifMGRCNP_AwfjU_VizZChA1Fbk9Et529PlFd_dOXjrZpgsLrEw3_AeB1_4NO8hB3TcUpXk-qRDMWitpe4tXJIiEeBf_JeEw2auqO-QKIfFGBnUao7nB9W6E9CQ8CZ1zRUeQmscijkAxmozr-IxoQfo_c0eXYribG3GemBUtqIU1bQP90lJT4KXLzbOrEZEvbMpJIgq64S_YToPBNdIil9kOcnw"/>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-background via-background/60 to-transparent">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Laser Whitening</h3>
+<p class="text-body-md text-on-surface-variant">Brighten your smile up to 8 shades in a single session with our painless laser technology.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About the Doctor Section -->
+<section class="py-32 bg-background px-margin-mobile md:px-margin-desktop" id="about">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 reveal">
+<span class="text-label-sm font-label-sm uppercase tracking-[0.3em] text-secondary mb-4 block">Meet Our Principal</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-8">Guided by <span class="italic">Clinical Mastery</span> and Compassion.</h2>
+<div class="space-y-6 text-body-lg text-on-surface-variant">
+<p>Dr. Elena Sterling founded ProDentist with a single vision: to redefine the dental experience through the lens of luxury hospitality and surgical excellence.</p>
+<p>With over two decades of international training in cosmetic dentistry and oral surgery, she leads a team of specialists dedicated to providing life-changing transformations for the most discerning patients.</p>
+</div>
+<div class="mt-12">
+<img class="w-48 h-auto grayscale brightness-110 opacity-40 mb-8" data-alt="A professional signature of Dr. Elena Sterling in an elegant, minimal font style, representative of a luxury brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnsVolSuY2S8U1jBicbvf0q7uz1cSw6Smi1DG4rCFKk6dYkzlLb2Vm3gwwvrslwlgRvS-KoLxJ26MCqK-yVzoxYLnxrcGd8jTmQr-adpW37wqo-CViHx0f7N1NtFgGRZ4nlXPVs4PTR-Ed9DNvunGHJgHhbWZRCpG3juwxU3-mqr0Jw_4eF0D7PImDiFTbuxQhNRioPvucMRrEFTR4q2tcZrCj8N8d2-YcPQ-dJg9ibDXka-qLE5CrKDnz5qW9NBE2R9BUt25B7_s"/>
+<button class="px-10 py-4 border border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all active:scale-95">Our Philosophy</button>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 relative reveal">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A formal editorial portrait of a female dentist in high-end medical attire, set in a minimalist white and beige studio. The lighting is soft and flattering, typical of a luxury magazine feature. She has a confident, warm expression that balances professionalism with approachable luxury care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxjZbDR0K8bRP3foqv2QPMC4mnEkP4fH4dRw_MJ3ZLL2GToPB0pjSrQCMGVVbyLewnIg4i-N6NYqzvjI8Rzy7O17sP3o74ktL4Dhq-7ghrfe4F8lf-JHS0MhTzVD4byQKZjabGN8F_Z13aQceGAAJp-dN0icy7p5cO0IYmkYaUX_09G2ctqu0gBTSej_UJ7ywg9cs4d93qZZ65pTtjGlgIoIUwk0a1VVzMjfqhAzRLabeaVQ_NsNhntxIU1POBkLF8-GibHgGhMj0"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-10 bg-surface-container-highest shadow-xl border border-outline-variant/30 hidden lg:block">
+<p class="font-headline-md text-headline-md text-primary italic">"Beauty begins with health."</p>
+<p class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">— Dr. Elena Sterling</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Smile Transformation Gallery -->
+<section class="py-32 bg-surface-container-low px-margin-mobile md:px-margin-desktop overflow-hidden" id="gallery">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-primary text-center mb-24 reveal">Results that <span class="italic">Speak for Themselves</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="flex flex-col reveal">
+<div class="relative group aspect-square overflow-hidden bg-background mb-6">
+<img class="w-full h-full object-cover" data-alt="Before and after split screen showing a professional smile makeover. The left side shows misaligned teeth, and the right side shows perfectly aligned, bright porcelain veneers. The lighting is consistent and high-end, focusing on the natural clarity and beauty of the transformation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjLYrPr5MBsUgcTSIWwm0HRDJP-H_EsHurcBH14bVH_eYlQl5rIlr2wEe4HCQY442X8ZmGW0Cuz9ZrWRRcdeufAj419GfIuOj7ZsOvu0rxGq8PPvbwIkKunHtfLuKqROE2uF5ogegDIaiC0-0R0xUCaBvVY08nhY8Znk_NLmLIqCaXAFGR5UvtM7qHDkD81Zod0Nwb8JdN6kED6VppisKGV6T-CH9wLeMD9XOxON7zhae_vHEtKrS-h9quNRTiDKf0dr7j1vgS26E"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="px-6 py-2 bg-background/90 text-label-sm font-label-sm uppercase tracking-widest">Case Study 01</span>
+</div>
+</div>
+<h4 class="text-body-lg font-bold text-primary">Full Arch Reconstruction</h4>
+<span class="text-label-sm font-label-sm uppercase text-on-surface-variant mt-1">12 Weeks Duration</span>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col reveal" style="transition-delay: 100ms;">
+<div class="relative group aspect-square overflow-hidden bg-background mb-6">
+<img class="w-full h-full object-cover" data-alt="Macro photography of a perfectly restored molar with a ceramic inlay, demonstrating incredible detail and biological harmony. The aesthetic is clean and professional, focusing on the seamless transition between tooth and restoration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNzTqc7hWsGsjW6FRo3x_uPRNJ4cCocS7Jx2AeoLVVZP3htSCZThWHfqj1CDFn5J-AWr6P0QpMmUjM2HJLgFaW0vzQubANcIYWKXB3AO9CWWRYgdDU9Z1022i_21mqfzrDg7T-USdie5-tS42MSLMAyjVdlxj1j-suftiF-ehBgV6YFlx9IDYCVD4WbfakdTLCvAmya10t7rL_MzZlEbxL3qsmzuMZCdMyRlE47Ppg2D21n5Xl6QmTuiiavvRFYWISdM_9aC1lo58"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="px-6 py-2 bg-background/90 text-label-sm font-label-sm uppercase tracking-widest">Case Study 02</span>
+</div>
+</div>
+<h4 class="text-body-lg font-bold text-primary">Porcelain Veneers</h4>
+<span class="text-label-sm font-label-sm uppercase text-on-surface-variant mt-1">2 Appointments</span>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col reveal" style="transition-delay: 200ms;">
+<div class="relative group aspect-square overflow-hidden bg-background mb-6">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young woman with a wide, healthy smile after orthodontic treatment. She is standing in a brightly lit, minimalist space, radiating confidence. The photo emphasizes the life-changing impact of dental care on personal self-esteem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk3CmqVo7gcdJk73mvPlgJqQYstldeGhXjz6UjAHAUURv7kWbYoA5kY5iFukqt9_ekaVCsqVVLxHGtuaIfFbehsx4K07qJKNeEneKiZfXGiewAJCddu_XAEo5vpFr1OVCHTb3M5dqF2qgUR7jEBpiH0P429Iwp6a321vz3ngWVsEXgkymdj9dJ4jLPFE6p0REfgCI_j4NwAyairJU17G7nAlKiWahT_2MkPbYOGei4bn1hlbhFCZf9Cg65I5b3nJ_4NneUr2M95io"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="px-6 py-2 bg-background/90 text-label-sm font-label-sm uppercase tracking-widest">Case Study 03</span>
+</div>
+</div>
+<h4 class="text-body-lg font-bold text-primary">Invisalign + Whitening</h4>
+<span class="text-label-sm font-label-sm uppercase text-on-surface-variant mt-1">14 Months Journey</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-32 bg-background px-margin-mobile md:px-margin-desktop">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+<div class="lg:col-span-1 reveal">
+<h3 class="text-headline-md font-headline-md text-primary mb-6">Redefining the <br/><span class="italic">Clinic Experience</span></h3>
+</div>
+<div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-16 reveal">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">Pain-Free Dentistry</h4>
+<p class="text-body-md text-on-surface-variant">We utilize advanced sedation and gentle techniques to ensure your journey is completely comfortable and stress-free.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="biotech">biotech</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">Advanced Tech</h4>
+<p class="text-body-md text-on-surface-variant">From 3D digital impressions to AI-guided diagnostics, we use the future of dentistry today for extreme precision.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="concierge">concierge</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">Concierge Care</h4>
+<p class="text-body-md text-on-surface-variant">A dedicated coordinator handles everything from travel arrangements to personalized post-op care kits.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="spa">spa</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">Boutique Setting</h4>
+<p class="text-body-md text-on-surface-variant">A serene atmosphere with aromatherapy, noise-canceling headphones, and luxury lounge amenities.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 bg-surface-container px-margin-mobile md:px-margin-desktop" id="testimonials">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-primary text-center mb-24 reveal">Whispers of <span class="italic">Gratitude</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter reveal">
+<!-- Testimonial 1 -->
+<div class="bg-background p-12 border border-outline-variant/30 flex flex-col justify-between h-full">
+<p class="text-body-lg italic text-on-surface mb-8">"I have never felt so relaxed in a dentist's chair. The atmosphere is more like a boutique retreat than a clinic, and the results were beyond my expectations."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a satisfied female patient with a warm, natural smile, emphasizing the success of her dental treatment in a high-end setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv3o0LMNhY22p-u1W8AKzwy1hjA709595m8hNY4vZUszpA8kHYJyYI6SQCd-7fNND9dHTrL52vjP-lFsWCx2hQ5sSZl0hA49DTje_l7Di0an0YKy1yov1x1qE2iqMS6L3JJNWHH-nOdjQ7uYRm8I3iJAcbHznOlmWVbUJOO0eYPDwj_w7f5z1yI3PWzVMpvd1_8m-91VlAywGv7uGBBdAuws-Nl5Eku9gZV-xWw4aSHnjaAHgp_cGNp7uPzTu9TINsAEg7s75KffE"/>
+</div>
+<div>
+<p class="text-label-sm font-bold text-primary uppercase tracking-widest">Sarah Montgomery</p>
+<p class="text-label-sm text-on-surface-variant">Smile Makeover Patient</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-background p-12 border border-outline-variant/30 flex flex-col justify-between h-full">
+<p class="text-body-lg italic text-on-surface mb-8">"The attention to detail is remarkable. Dr. Sterling is a true artist. My veneers look so natural, no one even knows they aren't my own teeth."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a confident man with a natural, healthy smile after receiving cosmetic dentistry at a luxury clinic. High-end, clean photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW9ufrxK5Y7zV8nLERMzz5hS82GbPaaXzML-Emzc-QhANPMqwthNISOd4Skc8nu-J5MNsOv3jH_wjvfcWg4lz3LkhqYmMsP2tl6mU78nflS018csDhNv8i1GMdBVxT5zh6pd6bltXZ5KhjbB0pHmjUC1sxXttaBb45FYZSljWZB1xSZZM5h1jEW1ge3_emMwb6fuH6BKCp6vCMhGfVKwv3LVFxDu0-T7dx2xV73uNFIgoKfhQXqxwR0eoA65RKkopKWmzkeFwDPgs"/>
+</div>
+<div>
+<p class="text-label-sm font-bold text-primary uppercase tracking-widest">Julian Pierce</p>
+<p class="text-label-sm text-on-surface-variant">Cosmetic Patient</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-background p-12 border border-outline-variant/30 flex flex-col justify-between h-full">
+<p class="text-body-lg italic text-on-surface mb-8">"ProDentist has completely removed my fear of dental work. The pain-free technology is incredible, and the staff is exceptionally professional."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling woman in a minimalist, bright setting, expressing her satisfaction with the dental services she received. The mood is calm and positive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ4wOvVrC7nwe-r80jSx2N9qiHNEWJ5Xf95HNAl3-9P9DZVZrnVC7dqJPkjxtLllIGZ4KDMJpDnUmchehn46YYDhW2ewJttYPDyZnSBB3ITeKKA2767liBDAf1kiWubOp9SHXaoL8b_6a-fBjjNfs9wgEj3mPbrDty3Uy8uL7mx6xEwFPlQNNsxoxeP0xmOI5vn5UlLyiw_-N6C9V7IXF2W8cNkfnb2VX0mlEnqpgMtDzphJbZ4SE2RfKcotPHM9eLCk4jboz8KUI"/>
+</div>
+<div>
+<p class="text-label-sm font-bold text-primary uppercase tracking-widest">Elena Rossi</p>
+<p class="text-label-sm text-on-surface-variant">Invisalign Patient</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Feature Banner -->
+<section class="relative h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="A wide cinematic shot of a luxury dental office at dusk. The room is dimly lit with warm accent lights on the walls and sophisticated equipment. Large glass windows reveal a serene city view. The aesthetic is extremely high-end, evoking a sense of calm and ultimate clinical quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArDDAkbMT3kIg3A5sfEUjFPgvMkLGGKJlHlXKN2vUpyHRNLWHN9W6mAyu8JBii1NkBKjESfpV-q986eteNI1Ho2kRxgQxH4oeX1WRwlF4qx_PFTdRGsT-YxHxl7cKa98m3vLiKFzZsxEWPjEHemTUIcEGgd2Iv8kZljjrqUYyS_YcNVRx-Pt2U9NI9an8IkZv8p7WAkkoVkSVaHsydYqG6_glV6Cwe4e2RUCV2r6to9kPoQ-Bqq3e3__jHqkFOF-r6VMFcVZ2PI10"/>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto text-center reveal">
+<h2 class="text-headline-lg font-headline-lg text-on-primary mb-8 max-w-3xl mx-auto">Elevate Your Smile to the <span class="italic">Masterpiece</span> It Deserves To Be.</h2>
+<button class="px-12 py-5 bg-on-primary text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-surface-container-high transition-all active:scale-95">Inquire About Our Membership</button>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="py-32 bg-background px-margin-mobile md:px-margin-desktop">
+<div class="max-w-3xl mx-auto reveal">
+<h2 class="text-headline-lg font-headline-lg text-primary text-center mb-16">Common <span class="italic">Inquiries</span></h2>
+<div class="space-y-4">
+<div class="border-b border-outline-variant/30 pb-6">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-4 hover:text-secondary transition-colors">
+<span class="text-headline-md font-headline-md text-primary">How long does a Smile Makeover take?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p class="text-body-md text-on-surface-variant pt-4">Every case is unique. A simple makeover might take 2-3 visits over 2 weeks, while more complex reconstructions involving orthodontics or implants can take several months. We provide a detailed timeline during your initial consultation.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-6">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-4 hover:text-secondary transition-colors">
+<span class="text-headline-md font-headline-md text-primary">Is the treatment really pain-free?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p class="text-body-md text-on-surface-variant pt-4">Yes. We specialize in anxiety-free dentistry. We offer multiple levels of sedation, topical anesthetics that are highly effective, and we use the latest technology which is inherently less invasive and more comfortable.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-6">
+<button class="faq-toggle w-full flex justify-between items-center text-left py-4 hover:text-secondary transition-colors">
+<span class="text-headline-md font-headline-md text-primary">Do you offer international patient services?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+<p class="text-body-md text-on-surface-variant pt-4">Absolutely. We regularly welcome patients from across the globe. Our concierge team can assist with travel, hotel bookings at our partner luxury hotels, and private car transfers to and from the clinic.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Appointment Booking -->
+<section class="py-32 bg-primary text-on-primary px-margin-mobile md:px-margin-desktop">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="reveal">
+<h2 class="text-headline-lg font-headline-lg mb-8 leading-tight">Secure Your <span class="italic">Private Consultation</span></h2>
+<p class="text-body-lg text-on-primary-container mb-12">Take the first step toward your new smile. Our team will contact you within 24 hours to schedule a time that fits your lifestyle.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span>128 Luxury Plaza, Penthouse Floor, New York</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary">call</span>
+<span>+1 (212) 555-8800</span>
+</div>
+</div>
+</div>
+<form class="bg-primary-container p-12 space-y-8 reveal" style="transition-delay: 100ms;">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="text-label-sm font-label-sm uppercase tracking-widest text-on-primary-container">Full Name</label>
+<input class="bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-secondary p-0 pb-2 text-on-primary placeholder:text-on-primary-container/30" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-label-sm font-label-sm uppercase tracking-widest text-on-primary-container">Email Address</label>
+<input class="bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-secondary p-0 pb-2 text-on-primary placeholder:text-on-primary-container/30" placeholder="email@luxury.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-label-sm font-label-sm uppercase tracking-widest text-on-primary-container">Primary Concern</label>
+<select class="bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-secondary p-0 pb-2 text-on-primary appearance-none">
+<option class="text-primary">Smile Makeover</option>
+<option class="text-primary">Dental Implants</option>
+<option class="text-primary">General Wellness</option>
+<option class="text-primary">Emergency Care</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-label-sm font-label-sm uppercase tracking-widest text-on-primary-container">Message</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-secondary p-0 pb-2 text-on-primary placeholder:text-on-primary-container/30" placeholder="How can we assist you?" rows="3"></textarea>
+</div>
+<button class="w-full py-5 bg-on-primary text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed transition-all active:scale-95" type="submit">Send Request</button>
+</form>
+</div>
+</section>
+<!-- Instagram/Gallery Collage -->
+<section class="py-20 bg-background overflow-hidden">
+<div class="flex gap-4 animate-scroll whitespace-nowrap">
+<div class="flex gap-4 min-w-full">
+<img class="w-80 h-80 object-cover flex-shrink-0" data-alt="A lifestyle shot of the clinic lobby featuring a minimalist marble coffee table with a luxury design book and a gold-rimmed cup of coffee. Warm ivory walls and soft lighting create an inviting, spa-like atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApzGHuD3wjcv1Ui6Vri4KvXRVmrUOqY34moA5aGPQ0N8sUuLHCYMIvpCrORBRo_qE-wqP-w-8xyrc0BW4AN4ZPgczxFCjYBRtjK8ZWSiLXwLKvvjrTY9haOvksnFwHdf1jdBNVFTskNpUtWtPsapMRKXO6PsLFtgg7Xio9keRpCZfAgWEyTL3-M8Pq8Xc29CUxmB70q7mLuYs5C6F64rEn6bxvKC9JKP0dAaarkkMv1eZxyiVLDsBNPHcebyZd-7SejyTmk_BU_GU"/>
+<img class="w-80 h-80 object-cover flex-shrink-0" data-alt="A macro shot of a single, perfectly crafted porcelain veneer being held by professional tweezers under surgical lighting. Every detail of the natural translucency and texture is visible, showcasing dental artistry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhAFh_J_dBa1XCCj1vqpjd18gLRM4lsAnMQCJq-scc8hnn3dMAUKYwVtFs1bRjZlepmKin1n5-S15xi1ZfbDgWsLum8fbITqrn3C-eGmNJWMsHGaCbzcjitSgDzda9hK35mBwRzDMA8usJkS2VKffOH5a82xGoZmD9iywlgFXstUdGWJjBrLat9lHd7lRgb9itMZUrvZC5IFKJ1bp4WAN7gLafghh9hYptTsDDODv3BIDZaE8uXxH6JddtEkHCG8ydd1Eupy43020"/>
+<img class="w-80 h-80 object-cover flex-shrink-0" data-alt="An interior shot of a dental suite at ProDentist. It features a sleek, ergonomic black leather dental chair in a room with warm wood panels and indirect LED lighting. The space looks sophisticated and modern, not clinical." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNxWdFDKnLLcdUUsldaa-lia3xU33xYKKPVXY70LJYlL_CSB0KRBpVSgynm8jE8fA_6UeD2COJFc6OqKRB6HmhtQ5s1VXU-G6g3rYdcLdsYkvMDbanvaAgxD6761atu-SsTSzaO_9222eyPmhiv_7UxkhtC7MnBBp1tY_LPbA6hQXJDD-FM4a8J7WPVBD0-PCTZupIyKbPZvKPy2b0yzzU1gTzmAjWpRR3ZhFxrxUqVz6CNsf8GRfYajthzjc9ftofFAGqBWKDwsA"/>
+<img class="w-80 h-80 object-cover flex-shrink-0" data-alt="A candid shot of Dr. Elena Sterling reviewing digital 3D smile designs on a large high-resolution monitor with a patient. The interaction is focused and professional within a high-end consultation room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxcMaSAMtTM0zA5X9PpySWdaEvZeb3FrPVLjswxjIf490Aa6sjSgNByqGSdxyVS1kuBt6J0QZZiBwpKj1_QlcglQ_ahVlMUWPOOxcLCU-VxlGixM2_wfR4GVcHRAB2SSekNzxRbZPmZ-qfEnaOS4CU4quzF6-ueoQXUa5ih5Z1sxSELkJQKpMpkiMi9YaZc1nTdzp7XVcN9_YuwQlzukrGJG99u7L3CfpveTNZiTmdxJu0TVzXsl62rBjsyJAeWiOZuLSJpVYo8hU"/>
+<img class="w-80 h-80 object-cover flex-shrink-0" data-alt="A minimalist photograph of a clear Invisalign aligner set inside its sleek black case on an ivory surface. Soft gold accents from nearby decor reflect subtly on the surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9KBn3Tlmuqv7gh0gL9W9n2bpwaGPhYboU6KsSC8DLaqJ9Vr-IFm0CsQ5JthI_SxXHHPi5PSo6-9mRNmD1HfDLoiCY3cGM9954b3666VQlYEiHfrQZos5wYvS1k-yhtQJQAPkQHpxCTr32HPRlPoPvLDleEqaW9DRz2zUpo76Op0ueB4F_-6H7YSZz0o1JgCqvZXHdo7RVBlw0Pzbvik36UalGqHQVX54JNZUlIzGPhz-31pRLNfWOb5QdzSZcKTFUZye2K9Gz4Fc"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-6">
+<div class="text-headline-md font-headline-md text-primary">ProDentist</div>
+<p class="text-body-md text-on-surface-variant max-w-xs">Dedicated to clinical excellence and the art of the perfect smile. Experience the future of dentistry in a setting of ultimate luxury.</p>
+<div class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors" data-icon="mail">mail</span>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-label-sm font-label-sm uppercase tracking-widest text-primary">Quick Links</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Smile Gallery</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Testimonials</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-label-sm font-label-sm uppercase tracking-widest text-primary">Services</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">General Dentistry</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Cosmetic Procedures</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Patient Care</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Dental Implants</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Invisalign</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-label-sm font-label-sm uppercase tracking-widest text-primary">Newsletter</h5>
+<p class="text-body-md text-on-surface-variant">Stay informed about the latest in dental technology and clinical excellence.</p>
+<div class="relative mt-2">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 pb-2" placeholder="Email address" type="email"/>
+<button class="absolute right-0 bottom-2 text-primary font-bold hover:text-secondary transition-colors uppercase text-label-sm">Join</button>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-10 border-t border-outline-variant/30 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-label-sm font-label-sm text-on-surface-variant">© 2024 ProDentist Clinical Excellence. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        // Sticky Header & Navigation Logic
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4', 'bg-background/95', 'shadow-sm');
+                nav.classList.remove('py-6', 'bg-background/80');
+            } else {
+                nav.classList.remove('py-4', 'bg-background/95', 'shadow-sm');
+                nav.classList.add('py-6', 'bg-background/80');
+            }
+        });
+
+        // Mobile Menu Logic
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
+        });
+
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-toggle');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                const icon = item.querySelector('.material-symbols-outlined');
+                
+                // Close others
+                document.querySelectorAll('.faq-content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.style.maxHeight = null;
+                        otherContent.previousElementSibling.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth scrolling for all anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
